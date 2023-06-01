@@ -4,6 +4,7 @@ import Home from "./Home";
 import Summary from "./Summary";
 import ShowDetails from "./ShowDetails";
 import Navbar from "./Navbar";
+import './App.css'
 
 function App() {
   return (

@@ -30,8 +30,12 @@ const Summary = () => {
             {isPending && <div>Loading..</div>}
             {error && <div>{error}</div>}
             {data && (
-            <article dangerouslySetInnerHTML={{ __html: data.show.summary }}>
-            </article>
+                <div className="container">
+                    <img className="image" src={data.show.image.medium} alt={data.show.name} />
+                    <div className="summary-content" dangerouslySetInnerHTML={{ __html: data.show.summary }}>
+            </div>
+                </div>
+            
             )}
         </div>
       );

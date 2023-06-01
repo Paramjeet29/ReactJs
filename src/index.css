@@ -4,7 +4,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  background-color: #2d142c;
 }
 .navbar {
   padding: 20px;
@@ -12,21 +12,23 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #242A38;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #eb1811;
 }
 .navbar .links {
   margin-left: auto;
+  
 }
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #eb1811;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color:#676F9D;
 }
 
 /* list  css */
@@ -56,16 +58,17 @@
   height: auto;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px 
 }
 
 .blog-details h2 {
   margin-bottom: 10px;
+  color: #c72c41;
 }
 
 .blog-details p {
   margin: 5px 0;
-  color: #f1356d;
+  color: #f48784;
   font-weight: bold;
 }
 .blog-details div:hover {
@@ -81,19 +84,28 @@
 
 
 /* summary css */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image{
+  margin-right: 10px;
+}
 .summary {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f2f2f2;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(23, 34, 49, 0);
 }
 
-.summary article {
-  font-size: 16px;
+.summary div{
+  font-size: 20px;
   line-height: 1.5;
   margin-top: 20px;
+  color: #F9B17A;
 }
+
 
 @media screen and (max-width: 768px) {
   .summary {
@@ -101,5 +113,6 @@
   }
   .summary article {
     font-size: 14px;
+
   }
 }
